@@ -8,7 +8,6 @@ public class matrixTest {
 	@Test
 	public void test1() {
 		matrix matrix = new matrix(3);
-		//double[][] matrix = new double [3][3];
 		
 		matrix.mymatrix[0][0] = 5;
 		matrix.mymatrix[0][1] = 4;
@@ -27,7 +26,6 @@ public class matrixTest {
 	@Test
 	public void testD() {
 		matrix matrix = new matrix(3);
-		//double[][] matrix = new double [3][3];
 		
 		matrix.mymatrix[0][0] = 5;
 		matrix.mymatrix[0][1] = 4;
