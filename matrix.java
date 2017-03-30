@@ -63,12 +63,12 @@ public class matrix {
 
 	
 
-	private static double pow(double x, double y) //Making pow function accessible to Matrix type
+	private static double pow(double x, double y) //pow function
 	{
 		return Math.pow(x, y);
 	}
 
-	public matrix subMatrix(int r, int c) // Pulling out a smaller part of a larger matrix
+	public matrix subMatrix(int r, int c)//method of the subMatrix
 	{
 		matrix sub = new matrix(size - 1);
 		
