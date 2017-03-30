@@ -25,7 +25,7 @@ while(((size =inputfile.nextInt() )> 0))//check conditions
 	{
 		for(int j = 0; j < size; j++)
 		{
-			test.mymatrix[i][j] = inputfile.nextInt(); 
+			test.mymatrix[i][j] = inputfile.nextInt(); //read from the input file
 		}
 	}
 	System.out.println("M =");
@@ -34,38 +34,38 @@ while(((size =inputfile.nextInt() )> 0))//check conditions
 	{
 		for(int j = 0; j < size; j++)
 		{
-			System.out.print(test.mymatrix[i][j]+" "); 
+			System.out.print(test.mymatrix[i][j]+" "); // print the matrix 
 		}
 		System.out.println();
 	}
 	
-	double deter = test.determinant(); 
+	double deter = test.determinant(); //het the determinant function
 	System.out.print("det(M) = ");
-	System.out.println(deter); 
+	System.out.println(deter); //print the value
 	
 	if (deter != 0)
 	{
 		matrix inter = test.inverse(); //inverse the matrix
-		System.out.println("Minv =");
+		System.out.println("Minv =");//print the value
 		for(int i = 0; i < size; i++)
 		{
 			for(int j = 0; j < size; j++)
 			{
-				System.out.println(inter.mymatrix[i][j]); 
+				System.out.println(inter.mymatrix[i][j]); //print the inverse matrix 
 			}
 			System.out.println();
 		}
 	}
 	
 }
-System.out.println("Done!"); 
+System.out.println("Done!"); //show it is finished
 inputfile.close();
 
 System.out.close();
 	}
        catch(IOException e)//catch the exception 
        {
-           System.out.println("The file cannot be written.");
+           System.out.println("The file cannot be written.");//print the info for error
 
        }
 	}
